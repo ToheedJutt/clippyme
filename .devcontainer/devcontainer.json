@@ -1,0 +1,12 @@
+{
+  "name": "ClippyMe Server",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postStartCommand": "bash scripts/cs-start.sh",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": { "label": "ClippyMe API", "visibility": "public" }
+  }
+}
