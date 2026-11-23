@@ -2,7 +2,7 @@
   "name": "ClippyMe Server",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": { "moby": false }
   },
   "postStartCommand": "bash scripts/cs-start.sh",
   "forwardPorts": [8000],
